@@ -1,0 +1,29 @@
+button{
+    color: blue;
+}
+
+#maze{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title{
+    width: 200px;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
