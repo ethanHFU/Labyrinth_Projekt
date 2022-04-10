@@ -5,30 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Classification" content="Game">
-    <title>Labyrinth</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <header>
-        <div class="right1 header">Make your Maze</div>
-        <div class="right2 header">Share</div>
-        <div class="right3 header">About</div>
 
+    <header>
+
+        <div class="parent">
+            <div>
+                <p id="title">MAZE</p>
+            </div>
+            <div class="child-1">
+                <p>Search</p>
+            </div>
+            <div class="child-2">
+                <p>Make your Maze</p>
+            </div>
+            <div class="child-3">
+                <p>About</p>
+            </div>
+        </div>
     </header>
     <main>
-        <h1 id="title">mazer</h1>
-        <p class="center">Escape the maze to win!</p>
-        <a href="#maze">To the game</a>
-        <p class="center"><button onclick="window.location.href = 'game.html';"> Start Game</button></p>
-        <img src="https://st3.depositphotos.com/1519230/18598/v/950/depositphotos_185987698-stock-illustration-labyrinth-icon-maze-symbol.jpg"
-            alt="Maze" id="maze" height=500>
+        <div class="notHeader">
+            <h1 class="center">Maze</h1>
+            <p class="center">Escape the maze to win!</p>
+            <a href="#maze" class="center">To the game</a>
+            <p class="center"><button onclick="window.location.href = 'game.html';"> Start Game</button></p>
+            <img class="center" src="https://st3.depositphotos.com/1519230/18598/v/950/depositphotos_185987698-stock-illustration-labyrinth-icon-maze-symbol.jpg"
+                alt="Maze" id="maze" height=500>
+        </div>
     </main>
 
-    <footer> <u>Thanks for playing!</u> </footer>
+    <footer class="center"> <u>Thanks for playing!</u> </footer>
+
 
 
 </body>

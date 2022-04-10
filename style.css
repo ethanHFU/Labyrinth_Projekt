@@ -1,56 +1,62 @@
+
+
 html{
     font-family: 'Roboto', sans-serif;
 }
 
-button{
-    color: blue;
-}
-
-#maze{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#title{
-    width: 200px;
-    padding: 10px;
-    border: 10px;
-    margin: 10px;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+header{
     
-    text-align: center;
+    background-color:rgb(128, 128, 128);
+    height: fit-content;
 }
+
+
+.parent{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.parent > div{
+    display:flex;
+    justify-content: flex-end;
+    
+    background-color: var(--background-color);
+
+    width: fit-content;
+    height: 60px;
+    margin: 25px;
+    padding: 10px;
+
+    --background-color: grey;
+}
+
+
+
+.parent > div > p:not(#title){
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    transition: background-color .5s, padding .5s ease;
+} 
+
+.parent > div > p:hover:not(#title){
+    background-color: rgb(192, 199, 212);
+    padding: 1.5em;
+}
+
+.parent > div:first-child{
+    justify-content: flex-start;
+    flex: 3;
+}
+
+
 
 .center{
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-header{
-    position: relative;
-    background-color: grey;
-} 
-
-.header{
-    width: 200px;
-    padding: 10px;
-
-    text-align: center;
-    
-
-}
-.right1{
-    position: absolute;
-    right: 0px;
-}
-
-.right2{
-    position: absolute;
-    right
 }
